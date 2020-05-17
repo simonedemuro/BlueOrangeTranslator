@@ -1,20 +1,21 @@
 using System;
 using Xunit;
 
+
 namespace BlueOrange.Test
 {
     public class UnitTest1
     {
-
         int mul(int a, int b)
         {
-            int c=0;
+            int c = 0;
             for (int i = 0; i < b; i++)
             {
                 c += a;
             }
 
             return c;
+            CodeTranslation codre = new CodeTranslation();
         }
 
         [Fact]
@@ -60,7 +61,6 @@ namespace BlueOrange.Test
 
             resultingConstant = startConstants;
 
-
             foreach (var word in constantArray)
             {
                 if (word == "#define" )
@@ -102,8 +102,6 @@ namespace BlueOrange.Test
 
         public string variablesDefinition(string variablesToBeTranslated)
         {
-            bool isLabel = false;
-
             string startVariables = ".var";
             string endVariables = ".end-var";
 
@@ -118,7 +116,6 @@ namespace BlueOrange.Test
                 if (word != "int" && word != "")
                 {
                     resultingVariables = resultingVariables + "\n\t" + word;
-                    isLabel = false;
                 }                
             }
             resultingVariables = resultingVariables + "\n" + endVariables;
@@ -126,7 +123,44 @@ namespace BlueOrange.Test
             return resultingVariables;
         }
 
-        
+        [Fact]
+        public string methodTest()
+        {
+            // SETUP
+            var expectedRes = ".var\n\ta\n\tb\n.end-var";
+            string s = "int a, b;";
+
+            // OPERATIONS
+            var myResult = methodDefinition(s);
+
+
+            // ASSERT 
+            Assert.Equal(expectedRes, myResult);
+            return s;
+        }
+
+
+        public string methodDefinition(string methodToBeTranslated)
+        {
+            string startMethod = ".method";
+            string endMethod = ".end-method";
+
+            string[] methodArray = methodToBeTranslated.Split(' ', ',', ';');
+            string resultingMethod;
+
+            resultingMethod = startMethod;
+
+            foreach (var word in methodArray)
+            {
+                if (word != "int" && word != "")
+                {
+                    resultingMethod = resultingMethod + "\n\t" + word;
+                }
+            }
+            resultingMethod = resultingMethod + "\n" + endMethod;
+
+            return resultingMethod;
+        }
 
     }
 }
