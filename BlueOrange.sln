@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOrange", "BlueOrange\BlueOrange.csproj", "{08D1998F-DD9B-4DFB-8C35-89A2365BD4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueOrange", "BlueOrange\BlueOrange.csproj", "{08D1998F-DD9B-4DFB-8C35-89A2365BD4D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOrange.Compiler", "BlueOrange.Compiler\BlueOrange.Compiler.csproj", "{BF3534A2-C117-43C6-8876-078FEC6DB3B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueOrange.Compiler", "BlueOrange.Compiler\BlueOrange.Compiler.csproj", "{BF3534A2-C117-43C6-8876-078FEC6DB3B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOrange.Test", "BlueOrange.Test\BlueOrange.Test.csproj", "{B35F0437-7C15-4B44-8692-4697FC52BA12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlueOrange.Test", "BlueOrange.Test\BlueOrange.Test.csproj", "{B35F0437-7C15-4B44-8692-4697FC52BA12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

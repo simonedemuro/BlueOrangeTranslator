@@ -1,5 +1,8 @@
 using System;
 using Xunit;
+using BlueOrange.Compiler.Langs;
+
+
 
 
 namespace BlueOrange.Test
@@ -89,9 +92,10 @@ namespace BlueOrange.Test
             // SETUP
             var expectedRes = ".var\n\ta\n\tb\n.end-var";
             string s = "int a, b;";
+            IjvmCompiler ijvm = new IjvmCompiler();
 
             // OPERATIONS
-            var myResult = variablesDefinition(s);
+            var myResult = ijvm.VariablesDefinition(s);
 
 
             // ASSERT 
@@ -100,7 +104,7 @@ namespace BlueOrange.Test
         }
 
 
-        public string variablesDefinition(string variablesToBeTranslated)
+        /*public string variablesDefinition(string variablesToBeTranslated)
         {
             string startVariables = ".var";
             string endVariables = ".end-var";
@@ -122,6 +126,7 @@ namespace BlueOrange.Test
 
             return resultingVariables;
         }
+        */
 
         [Fact]
         public string methodTest()

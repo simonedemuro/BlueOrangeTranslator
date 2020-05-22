@@ -25,7 +25,6 @@ namespace BlueOrange.Test
 
     class Language
     {
-
         public IstructionSet istructionTags;
         
 
