@@ -4,77 +4,24 @@ using System.Text;
 
 namespace BlueOrange.Compiler.Interfaces
 {
-    interface IOrangeLanguage
+    public interface IOrangeLanguage
     {
-/*
-        string stringCode;
-        string resultingCode;
-        string[] arrayCode;
-        int arrayCodeIndex;
+        string CodeDefinition(string codeToBeDefine);
+
+        string VariablesDefinition(string variablesToBeTranslated, IOrangeLanguage language);
 
 
-        public string getStringCode()
-        {
-            return stringCode;
-        }
+        string ConstantDefinition(string codeToBeDefine);
 
-        private void setStringCode(string newString)
-        {
-            stringCode = newString;
-        }
+        string Assignament(string codeToBeDefine);
 
-        public string getResultingCode()
-        {
-            return resultingCode;
-        }
+        string IfCostruct(string codeToBeDefine);
 
-        private void setResultingCode(string newString)
-        {
-            resultingCode = newString;
-        }
+        string WhileCostruct(string codeToBeDefine);
 
-        public void addToResultingCode(string newString)
-        {
-            resultingCode = resultingCode + newString;
-        }
+        string MethodImplementation(string codeToBeDefine);
 
-
-        private void setArrayCode(string[] newString)
-        {
-            arrayCode = newString;
-        }
-
-        public int getArrayCodeIndex()
-        {
-            return arrayCodeIndex;
-        }
-
-        public void setArrayCodeIndex(int newIndex)
-        {
-            arrayCodeIndex = newIndex;
-        }
-
-        public string[] getArrayCode()
-        {
-            return arrayCode;
-        } */
-
-        public string codeDefinition(string codeToBeDefine);
-
-        public string variablesDefinition(string variablesToBeTranslated, IOrangeLanguage language);
-
-
-        public string constantDefinition(string codeToBeDefine);
-
-        public string assignament(string codeToBeDefine);
-
-        public string ifCostruct(string codeToBeDefine);
-
-        public string whileCostruct(string codeToBeDefine);
-
-        public string methodImplementation(string codeToBeDefine);
-
-        public string methodCall(string codeToBeDefine);
-        public string blockAnalizer(string codeToBeDefine);
+        string MethodCall(string codeToBeDefine);
+        string BlockAnalizer(string codeToBeDefine);
     }
 }

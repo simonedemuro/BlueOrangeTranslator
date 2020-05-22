@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BlueOrange.Compiler.modelli
+﻿namespace BlueOrange.Compiler.modelli
 {
     public enum tagEnumeratore { instruction, constant, variables, main, method, assignment, variableget, input, output, methodcall, algebricoperation, other, tobewritten }
 

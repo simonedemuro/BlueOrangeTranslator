@@ -1,9 +1,4 @@
-﻿using BlueOrange.Compiler.modelli;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BlueOrange.Compiler
+﻿namespace BlueOrange.Compiler.modelli
 {
     public enum actualConstruct { empty, program, IF, WHILE, method, MAIN, blocco }
 

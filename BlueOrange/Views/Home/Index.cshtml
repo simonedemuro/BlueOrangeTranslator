@@ -3,6 +3,43 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <img class="logo" src="Img/logo.jpeg" />
+    <h1 class="display-4">Blue Orange</h1>
+
+    <p>....Because we are mad as hatter <a href="https://docs.microsoft.com/aspnet/core">Compile your useless code</a>.</p>
+
+    <button type="button" class="btn btn-primary" id="compileBtn">Compile</button>
+    <div class="container codeTranslatorContainer">
+        <div class="row">
+
+            <!-- Source Code Tile -->
+            <div class="col">
+                <label for="srcLang">Source Language:</label>
+                <select name="srcLangName" id="srcLang">
+                    <option value="C">C</option>
+                    <option value="Burlone">Bazinga</option>
+                </select>
+                <textarea id="srcCode" rows="15" cols="50">
+//Example Code:
+int a = 5;
+int b = 7;
+int c;
+if(a>b){
+    c = a+b;
+}
+                </textarea>
+            </div>
+
+            <!-- Destination Code Tile -->
+            <div class="col">
+                <label for="dstLang">Destination Language:</label>
+                <select name="dstLangName" id="dstLang">
+                    <option value="IJVM">IJVM</option>
+                    <option value="8088">8088</option>
+                </select>
+                <textarea id="dstCode" rows="15" cols="50"></textarea>
+            </div>
+        </div>
+    </div>
+
 </div>
