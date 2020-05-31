@@ -8,12 +8,12 @@ namespace BlueOrange.Compiler.Langs
 {
     class ClanguageCompiler: IOrangeLanguage
     {
-        BrickTranslation languageUnfolding(string srcCode) 
-        {
+        //BrickTranslation languageUnfolding(string srcCode) 
+        //{
 
 
            
-        }
+        //}
 
         public string Assignament(string codeToBeDefine)
         {

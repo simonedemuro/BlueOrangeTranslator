@@ -28,7 +28,7 @@ function compileCode(requestCodeAnswerDTO) {
                 return;
             }
 
-            // Oterwise 
+            // Otherwise 
             $('#dstCode').val(res.code);
 
             console.log(res);

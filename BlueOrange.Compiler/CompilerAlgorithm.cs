@@ -20,14 +20,21 @@ namespace BlueOrange.Compiler
                 throw new LanguageNotImplementedException(language);
         }
 
-        public string Compile(IOrangeLanguage lang)
+        public string Compile(IOrangeLanguage lang, string code)
         {
+
+            // PARSING
+
+            // CALLING IOrangeLanguage METHODS IN ORDER TO PROCESS THE CODE 
+
+
             bool cazzivari =  false;
             while (cazzivari)
             {
                // lang.processInstruction("in a = 6;");
             }
 
+            
             return "Blue Orange Compiler at Work " + (new Random().Next(0,100)).ToString() ;
         }
     }

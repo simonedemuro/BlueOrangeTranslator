@@ -44,10 +44,10 @@ namespace BlueOrange.Controllers
         {
             try
             {
-                IOrangeLanguage srcLanguage = 
+                IOrangeLanguage dstLanguage = 
                     compiler.GetConcreteLanguageImplementation(codeRequest.DstLanguage);
 
-                string compiledCode = compiler.Compile(srcLanguage);
+                string compiledCode = compiler.Compile(dstLanguage, codeRequest.Code);
 
                 CodeAnswerDTO translatedCode = new CodeAnswerDTO(compiledCode);
 
