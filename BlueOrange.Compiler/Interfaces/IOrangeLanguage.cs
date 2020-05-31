@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BlueOrange.Compiler.modelli;
 
 namespace BlueOrange.Compiler.Interfaces
 {

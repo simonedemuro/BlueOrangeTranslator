@@ -28,7 +28,7 @@ namespace BlueOrange.Compiler
                // lang.processInstruction("in a = 6;");
             }
 
-            return "Blue Orange Compiler at Work " + (new Random().Next(0,100)).ToString();
+            return "Blue Orange Compiler at Work " + (new Random().Next(0,100)).ToString() ;
         }
     }
 }
