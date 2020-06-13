@@ -22,6 +22,22 @@ namespace BlueOrange.Test
         }
 
         [Fact]
+        public void testCtoXML()
+        {
+            
+            ClanguageCompiler casa = new ClanguageCompiler();
+
+            // SETUP
+            string[] expectedRes = { "","<macro> mama 5 </macro>" };
+
+            // OPERATIONS
+             casa.toXML();
+
+            // ASSERT 
+            Assert.Equal(expectedRes, myResult);
+        }
+
+        [Fact]
         public void Test1()
         {
             // SETUP

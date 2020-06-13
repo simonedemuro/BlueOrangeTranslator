@@ -21,12 +21,41 @@
                 </select>
                 <textarea id="srcCode" rows="15" cols="50">
 //Example Code:
-int a = 5;
-int b = 7;
-int c;
-if(a>b){
-    c = a+b;
+#define PINO 4
+
+int main() {
+	int x;
+	int y;
+	x = getchar();
+ 	y = getchar();
+ 	printf("%d", fun1( fun2(x) + fun2(y), y));
 }
+
+int fun1(int x, int y){
+	int k = 3;
+
+	for( int i = x * 3; i > x; i--) {
+		if (i % 2 == 0){
+			k = fun2(y - 1);
+		} else {
+			k = k / fun2(i);
+		}
+	}
+	return k;
+}
+
+int fun2(int y){
+	while(y > 1){
+		if (y % 3 == 1){
+			return y;
+		}
+		y--;
+	}
+	return y + 10;
+}
+                
+                
+
                 </textarea>
             </div>
 
@@ -43,3 +72,34 @@ if(a>b){
     </div>
 
 </div>
+
+
+@*//Example Code:
+main() {
+	input x;
+ 	input y;
+ 	print fun1(fun2(x)+fun2(y), y);
+}
+
+fun1(x, y){
+	 k = 3;
+
+	for(i = x *3; i > x; i--) {
+		if (i%2 == 0){
+			k = fun2(y-1);
+		} else {
+			k = k/fun2(i);
+		}
+	}
+	return k;
+}
+
+fun2(y){
+	while(y > 1){
+		if (y%3 == 1){
+			return y;
+		}
+		y--;
+	}
+	return y+10;
+}*@

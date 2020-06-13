@@ -6,7 +6,7 @@ using BlueOrange.Compiler.modelli;
 namespace BlueOrange.Compiler.Interfaces
 {
     public interface IOrangeLanguage
-    {
+    { /*
         string CodeDefinition(string codeToBeDefine);
 
         string VariablesDefinition(string variablesToBeTranslated, IOrangeLanguage language);
@@ -24,5 +24,6 @@ namespace BlueOrange.Compiler.Interfaces
 
         string MethodCall(string codeToBeDefine);
         string BlockAnalizer(string codeToBeDefine);
+        */
     }
 }
